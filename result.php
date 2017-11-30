@@ -45,6 +45,8 @@ if(isset($_POST['type'])) {
         var gr = new jsGraphics(document.getElementById("canvas"));
         var col = new jsColor("#757575");
         var pen = new jsPen(col, 3);
+        var redCol = new jsColor("#E91E63");
+        var redPen = new jsPen(redCol, 3);
     
         var polyPoints=new Array(new jsPoint(<?php echo $point1[0];?>, <?php echo $point1[1];?>),new jsPoint(<?php echo $point2[0];?>, <?php echo $point2[1];?>),new jsPoint(<?php echo $point3[0];?>, <?php echo $point3[1];?>));
         gr.setOrigin(new jsPoint(300, 400)); 
@@ -60,7 +62,7 @@ if(isset($_POST['type'])) {
             var result = math.add(math.multiply(matrixIdentity, matrixInput), [[<?php echo $translation[0];?>, <?php echo $translation[0];?>, <?php echo $translation[0];?>], [<?php echo $translation[1];?>, <?php echo $translation[1];?>, <?php echo $translation[1];?>]]);   
             
             var polyPoints=new Array(new jsPoint(result.get([0, 0]), result.get([1, 0])), new jsPoint(result.get([0, 1]), result.get([1, 1])), new jsPoint(result.get([0, 2]), result.get([1, 2])));
-            gr.drawPolygon(pen, polyPoints); 
+            gr.drawPolygon(redPen, polyPoints); 
         <?php
         }
         ?>
@@ -73,7 +75,7 @@ if(isset($_POST['type'])) {
             var result = math.multiply(matrixScaleFactor, matrixInput);   
             
             var polyPoints=new Array(new jsPoint(result.get([0, 0]), result.get([1, 0])), new jsPoint(result.get([0, 1]), result.get([1, 1])), new jsPoint(result.get([0, 2]), result.get([1, 2])));
-            gr.drawPolygon(pen, polyPoints); 
+            gr.drawPolygon(redPen, polyPoints); 
         <?php
         }
         ?>
@@ -86,7 +88,7 @@ if(isset($_POST['type'])) {
             var result = math.multiply(matrixR, matrixInput);   
             
             var polyPoints=new Array(new jsPoint(result.get([0, 0]), result.get([1, 0])), new jsPoint(result.get([0, 1]), result.get([1, 1])), new jsPoint(result.get([0, 2]), result.get([1, 2])));
-            gr.drawPolygon(pen, polyPoints); 
+            gr.drawPolygon(redPen, polyPoints); 
         <?php
         }
         ?>
