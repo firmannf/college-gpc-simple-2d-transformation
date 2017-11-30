@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ffffff;
+    width: 100%;
+    color: #424242;
+    margin-top: 72px;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #424242;
+}
+
+.text-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: #757575;
+}
+
+.menu {
+    margin-top: 36px;
+}
+
+.btn-lg {
+    color: #424242;
+    width: 124px;
+}
