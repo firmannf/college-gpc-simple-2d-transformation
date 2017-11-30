@@ -36,19 +36,19 @@
                             <input type="hidden" name="type" value="translation">
                             <div class="form-group">
                                 <label for="point1" class="control-label">Point 1</label>
-                                <input type="text" class="form-control" id="point1" name="point1">
+                                <input type="text" class="form-control" id="point1" name="point1" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point2" class="control-label">Point 2</label>
-                                <input type="text" class="form-control" id="point2" name="point2">
+                                <input type="text" class="form-control" id="point2" name="point2" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point3" class="control-label">Point 3</label>
-                                <input type="text" class="form-control" id="point3" name="point3">
+                                <input type="text" class="form-control" id="point3" name="point3" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point3" class="control-label">Translation</label>
-                                <input type="text" class="form-control" id="translation" name="translation">
+                                <input type="text" class="form-control" id="translation" name="translation" placeholder="Example: 20,30">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -74,19 +74,19 @@
                             <input type="hidden" name="type" value="scale">
                             <div class="form-group">
                                 <label for="point1" class="control-label">Point 1</label>
-                                <input type="text" class="form-control" id="point1" name="point1">
+                                <input type="text" class="form-control" id="point1" name="point1" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point2" class="control-label">Point 2</label>
-                                <input type="text" class="form-control" id="point2" name="point2">
+                                <input type="text" class="form-control" id="point2" name="point2" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point3" class="control-label">Point 3</label>
-                                <input type="text" class="form-control" id="point3" name="point3">
+                                <input type="text" class="form-control" id="point3" name="point3" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point3" class="control-label">Scale Factor</label>
-                                <input type="text" class="form-control" id="scale" name="scale">
+                                <input type="text" class="form-control" id="scale" name="scale" placeholder="Example: 4,2">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -112,19 +112,19 @@
                             <input type="hidden" name="type" value="rotation">
                             <div class="form-group">
                                 <label for="point1" class="control-label">Point 1</label>
-                                <input type="text" class="form-control" id="point1" name="point1">
+                                <input type="text" class="form-control" id="point1" name="point1" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point2" class="control-label">Point 2</label>
-                                <input type="text" class="form-control" id="point2" name="point2">
+                                <input type="text" class="form-control" id="point2" name="point2" placeholder="Example: 20,30">
                             </div>
                             <div class="form-group">
                                 <label for="point3" class="control-label">Point 3</label>
-                                <input type="text" class="form-control" id="point3" name="point3">
+                                <input type="text" class="form-control" id="point3" name="point3" placeholder="Example: 20,30">
                             </div>                            
                             <div class="form-group">
                                 <label for="point3" class="control-label">Rotation Degree</label>
-                                <input type="text" class="form-control" id="rotation" name="rotation">
+                                <input type="text" class="form-control" id="rotation" name="rotation" placeholder="Example: 180">
                             </div>
                         </div>
                         <div class="modal-footer">
