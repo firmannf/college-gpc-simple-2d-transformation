@@ -32,7 +32,7 @@ if(isset($_POST['type'])) {
         <p class="center text-title">2D Geometry Transformation</p>
         <p class="center text-subtitle">you can see the <?php echo $type; ?> transformation below or go <a href="index.php">back</a></p>
         <div class="center menu">
-            <div id="canvas"></div>
+        <div id="canvas" style="position:relative;width:100%;height:400px;"></div> 
         </div>
     </div>
 
@@ -49,9 +49,9 @@ if(isset($_POST['type'])) {
         var redPen = new jsPen(redCol, 3);
     
         var polyPoints=new Array(new jsPoint(<?php echo $point1[0];?>, <?php echo $point1[1];?>),new jsPoint(<?php echo $point2[0];?>, <?php echo $point2[1];?>),new jsPoint(<?php echo $point3[0];?>, <?php echo $point3[1];?>));
-        gr.setOrigin(new jsPoint(300, 400)); 
+        gr.setOrigin(new jsPoint(600, 200)); 
         gr.setCoordinateSystem("cartecian"); 
-        gr.showGrid(20);
+        gr.showGrid(10);
         gr.drawPolygon(pen, polyPoints); 
 
         <?php
