@@ -51,7 +51,7 @@ if(isset($_POST['type'])) {
         var polyPoints=new Array(new jsPoint(<?php echo $point1[0];?>, <?php echo $point1[1];?>),new jsPoint(<?php echo $point2[0];?>, <?php echo $point2[1];?>),new jsPoint(<?php echo $point3[0];?>, <?php echo $point3[1];?>));
         gr.setOrigin(new jsPoint(600, 200)); 
         gr.setCoordinateSystem("cartecian"); 
-        gr.showGrid(10);
+        gr.showGrid(20);
         gr.drawPolygon(pen, polyPoints); 
 
         <?php
